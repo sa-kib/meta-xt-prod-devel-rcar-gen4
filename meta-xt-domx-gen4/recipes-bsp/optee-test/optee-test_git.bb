@@ -10,8 +10,7 @@ inherit python3native
 
 PV = "3.13.0+git${SRCPV}"
 
-SRC_URI = "git://github.com/OP-TEE/optee_test.git \
-          "
+SRC_URI = "git://github.com/OP-TEE/optee_test.git;protocol=https;branch=master"
 S = "${WORKDIR}/git"
 
 SRCREV = "21b347a3d75fd52fd49130e75c962c5b56123d2f"
@@ -47,7 +46,7 @@ do_install () {
     install -D -p -m0444 ${S}/out/supp_plugin/*.plugin ${D}${libdir}/tee-supplicant/plugins/
 }
 
-FILES_${PN} += "\
+FILES:${PN} += "\
                 ${nonarch_base_libdir}/optee_armtz/ \
                 ${libdir}/tee-supplicant/plugins/ \
 "
