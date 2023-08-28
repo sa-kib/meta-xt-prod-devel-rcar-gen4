@@ -1,4 +1,4 @@
-IMAGE_INSTALL_append = " \
+IMAGE_INSTALL:append = " \
     xen \
     xen-tools-devd \
     xen-tools-scripts-network \
@@ -7,4 +7,5 @@ IMAGE_INSTALL_append = " \
     xen-tools-pcid \
     xen-network \
     dnsmasq \
+    block \
 "
