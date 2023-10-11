@@ -7,4 +7,7 @@ IMAGE_INSTALL:append = " \
     xen-tools-pcid \
     xen-network \
     dnsmasq \
+    block \
+    backend-ready \
+    qemu-command-handler \
 "
