@@ -5,7 +5,7 @@
  * onwards. Reserve a high value for the GIC phandle.
  */
 #define PHANDLE_GIC (65000)
-#define PHANDLE_ITS (64999)
+#define PHANDLE_ITS (65002)
 
 / {
 	soc {
